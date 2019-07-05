@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rvRelativeLayoutForClick"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_margin="1dp"
+    android:background="#5E5E5E">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="1dp"
+        android:background="#5E5E5E"
+        android:backgroundTint="#5E5E5E
+">
+    <TextView
+        android:id="@+id/rvRemoteNameDisplayList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="2dp"
+        android:padding="8dp"
+        tools:text="Remote 1"
+        android:background="#5E5E5E"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

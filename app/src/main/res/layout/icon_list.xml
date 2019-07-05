@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/icon_list_outer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/newButtonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="5dp"
+        android:background="@android:color/transparent"
+        android:inputType="textPersonName"
+        android:layout_margin="15dp"
+        android:hint="Name"
+        android:maxLength="15"/>
+
+    <LinearLayout
+        android:id="@+id/select_icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/newButtonName"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/select_icon_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Icon"
+            android:layout_margin="3dp"
+            android:background="#5E5E5E"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvIconListAlertDialog"
+        android:layout_width="406dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newButtonName"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"/>
+</RelativeLayout>
